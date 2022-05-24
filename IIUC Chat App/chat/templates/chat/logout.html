@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %} {% load crispy_forms_tags %}
+<style>
+   html,
+    body {
+        background-image: url('https://media-exp1.licdn.com/dms/image/C511BAQHuHTTb4AQ6tQ/company-background_10000/0/1583053956287?e=2147483647&v=beta&t=rsJGfwui0w6Ds5OEkQV4uWyHjVTASqM5obBMOI7Cjk8') ; 
+  background-size: cover;
+  height:100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIUC Chat App </title>
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fontawesome-free/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+</head>
+
+<body class='bg-dark text-light'>
+    <div class="container h-100 d-flex flex-column justify-content-center">
+        <div class="col-md-6 offset-md-3">
+           
+            
+            <div class="card bg-light card-outline-primary">
+               <div class="image">
+           <img src="https://i.ibb.co/Sc09NN1/Chat-App-2.gif" alt="Chat-App-logo" border="0" style= "position: relative;
+            width: 200px;
+            top: 10%;
+            left: 30%"> 
+                <div class="card-body">
+                    <h2 style="text-align:center; color:blue">Successfully Logout</h2>
+                    <a href="{% url 'chat-login' %}">Login Again</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(function() {})
+</script>
+
+</html>
